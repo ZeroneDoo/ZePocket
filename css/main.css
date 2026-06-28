@@ -1,0 +1,98 @@
+:root {
+  /* Konfigurasi Global Bootstrap Override */
+  --bs-body-bg: #fff8f0;
+  --bs-body-color: #2d2a26;
+  --bs-body-font-family: "Space Grotesk", sans-serif;
+  --bs-border-color: rgba(45, 42, 38, 0.15);
+
+  /* Token Warna Brand ZePocket */
+  --zp-deep: #1a3636;
+  --zp-terracotta: #d97757;
+  --zp-sage: #677d6a;
+  --zp-gold: #c99a3f;
+}
+
+/* ===== UTILITY TIPOGRAFI ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.fw-display,
+.font-serif {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+
+/* ===== UTILITY WARNA TEKS (OVERRIDE BOOTSTRAP) ===== */
+.text-deep {
+  color: var(--zp-deep) !important;
+}
+.text-terracotta {
+  color: var(--zp-terracotta) !important;
+}
+.text-sage {
+  color: var(--zp-sage) !important;
+}
+.text-gold {
+  color: var(--zp-gold) !important;
+}
+
+/* ===== UTILITY WARNA BACKGROUND (OVERRIDE BOOTSTRAP) ===== */
+.bg-deep {
+  background-color: var(--zp-deep) !important;
+  color: #fff8f0 !important;
+}
+.bg-terracotta {
+  background-color: var(--zp-terracotta) !important;
+}
+.bg-sage {
+  background-color: var(--zp-sage) !important;
+}
+.bg-gold {
+  background-color: var(--zp-gold) !important;
+}
+.bg-sage-subtle {
+  background-color: rgba(103, 125, 106, 0.15) !important;
+  color: var(--zp-sage) !important;
+}
+
+/* ===== TOMBOL CUSTOM (.btn-deep) ===== */
+.btn-deep {
+  background-color: var(--zp-deep);
+  border-color: var(--zp-deep);
+  color: #fff8f0;
+  font-weight: 600;
+}
+.btn-deep:hover {
+  background-color: #11241f;
+  border-color: #11241f;
+  color: #fff8f0;
+}
+
+/* ===== DROPDOWN CUSTOM CUSTOMIZATION ===== */
+/* Efek Hover/Focus Item Biasa */
+.dropdown-custom .dropdown-item:hover,
+.dropdown-custom .dropdown-item:focus {
+  background-color: #f8f9fa !important; /* Mengganti warna biru default */
+  color: var(--zp-deep) !important;
+}
+
+/* Efek Hover/Focus Khusus Tombol Keluar (.text-danger) */
+.dropdown-custom .dropdown-item.text-danger:hover,
+.dropdown-custom .dropdown-item.text-danger:focus {
+  background-color: rgba(
+    217,
+    119,
+    87,
+    0.1
+  ) !important; /* Efek terracotta transparan */
+  color: #dc3545 !important;
+}
+
+/* Form control focus override agar selaras dengan warna sage */
+.form-control:focus {
+  border-color: var(--zp-sage);
+  box-shadow: 0 0 0 0.25rem rgba(103, 125, 106, 0.15);
+}
