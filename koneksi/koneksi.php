@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$db = "zeebag";
+$db = "zepocket";
 $user = "root";
 $pass = "";
 // Koneksi 

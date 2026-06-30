@@ -4,23 +4,13 @@ if (isset($_SESSION['user_id'])) {
   header("Location: index.php");
   exit;
 }
+
+$title = "Register";
+$use_navbar = false;
+$use_footer = false;
+
+include './partials/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Daftar — Kendi</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/main.css">
-</head>
-
-<body>
-
 	<div class="container min-vh-100 d-flex justify-content-center align-items-center py-5">
 
 		<div class="card shadow-sm border bg-white p-4 p-sm-5 rounded-4 w-100" style="max-width: 440px;">
@@ -71,7 +61,4 @@ if (isset($_SESSION['user_id'])) {
 		</div>
 	</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+<?php include './partials/footer.php'?>

@@ -1,0 +1,5 @@
+# Aktifkan rewrite engine
+RewriteEngine On
+
+# Jika file atau folder yang diketik di URL tidak ada fisiknya, lempar ke 404.php
+ErrorDocument 404 /zepocket/pages/404.php
